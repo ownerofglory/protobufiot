@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package protobuf;
+
+option java_package = "com.vladzasoba.protobuf";
+option java_outer_classname = "ClimateProtos";
+
+message ValueType {
+    required string unit = 1;
+    required fixed64 value = 2;
+}
+
+message IndoorClimate {
+    required ValueType temperature = 1;
+}
